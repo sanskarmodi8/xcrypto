@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/xcrypto/static/js/main.ce60bb20.js",
+    "main.js": "/xcrypto/static/js/main.bb0babf5.js",
     "index.html": "/xcrypto/index.html",
-    "main.ce60bb20.js.map": "/xcrypto/static/js/main.ce60bb20.js.map"
+    "main.bb0babf5.js.map": "/xcrypto/static/js/main.bb0babf5.js.map"
   },
   "entrypoints": [
-    "static/js/main.ce60bb20.js"
+    "static/js/main.bb0babf5.js"
   ]
 }
