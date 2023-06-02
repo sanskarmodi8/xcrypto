@@ -10,18 +10,7 @@ jobs:
           node-version: '18.6.0'
       - name: install node_modules
         run: npm install
-
-      - name: setting remote origin
-        run: git remote set-url origin https://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@github.com/sanskarmodi8/xcrypto
-
-      - name: adding user email
-        run: git config --global user.email "sansyprog8@gmail.com"
-      - name: adding user's name
-        run: git config --global user.name "Sanskar Modi"
-
-      - name: installing gh pages
-        run: npm install --save gh-pages
-      - name: npm build project
-        run: npm run deploy
+      - name: create build folder
+        run: npm run build
       - name: Built the project
         run: echo "Hurray!!"
