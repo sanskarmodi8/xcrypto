@@ -10,7 +10,10 @@ jobs:
           node-version: '18.6.0'
       - name: install node_modules
         run: npm install
-      - name: create build folder
-        run: npm run build
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./build
       - name: Built the project
         run: echo "Hurray!!"
