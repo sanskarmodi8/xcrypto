@@ -1,0 +1,27 @@
+name: Build project #this builds and deploys the project by automating npm run deploy command
+on: [push]
+jobs:
+  build-app:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '18.6.0'
+      - name: install node_modules
+        run: npm install
+
+      - name: setting remote origin
+        run: git remote add origin https://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@github.com/sanskarmodi8/xcrypto
+
+      - name: adding user email
+        run: git config --global user.email "sansyprog8@gmail.com"
+      - name: adding user's name
+        run: git config --global user.name "Sanskar Modi"
+
+      - name: installing gh pages
+        run: npm install --save gh-pages
+      - name: npm build project
+        run: npm run deploy
+      - name: Built the project
+        run: echo "Hurray!!"
