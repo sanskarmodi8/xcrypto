@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 
 const Home = () => {
   return (
-    <Box bgColor={'gray.900'} w={'full'} h={'100vh'}>
+    <Box mt={["-5", "0"]} bgColor={'gray.900'} w={'full'} h={'100vh'}>
       <motion.div
         style={{
           height: '80vh',
@@ -34,7 +34,7 @@ const Home = () => {
         textAlign={'center'}
         fontWeight={'thin'}
         color={'whiteAlpha.700'}
-        mt={['-150','-20']}
+        mt={['-120','-20']}
       >
         XCrypto
       </Text>
